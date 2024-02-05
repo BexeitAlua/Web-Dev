@@ -92,9 +92,7 @@ form input:focus {
   transition: 0.2s ease;
 }
 
-.link .login:hover {
-  background: #0d65d9;
-}
+
 
 form a {
   text-decoration: none;
@@ -105,9 +103,7 @@ form a {
   font-size: 0.875rem;
 }
 
-.link .forgot:hover {
-  text-decoration: underline;
-}
+
 
 hr {
   border: none;

@@ -19,12 +19,10 @@ body{
     box-sizing: inherit;
     position: relative;
     max-width: 1600px;
-    /*height: 100%;*/
-    /*margin: 0 auto;*/
-    /*background-color: #1fba58;*/
+
 
 }
-.logo{
+#logo{
     padding: 16px 6px 16px 10px;
     float: left;
     height: 100%;
@@ -48,19 +46,15 @@ body{
     padding-right: 1px;
     display: block;
     flex: 1 1 auto;
-    /*margin-top: -20px;*/
+
 }
 .contexnoe_menu li{
     display: inline;
     margin-right: 15px;
-    /*margin-left: -20px;*/
-    /*margin-top: -40px;*/
-    /*list-style: none;*/
 }
 .contexnoe_menu ul{
     margin-left: -40px;
     margin-right: 15px;
-    /*margin-top: -1px;*/
 }
 .contexnoe_menu li a{
 
@@ -86,7 +80,6 @@ body{
     cursor: pointer;
     margin-top: -41px;
     margin-right: 165px;
-    /*margin-left: 100px;*/
     background-color: rgb(255,255,255);
     border: 1px solid #fff;
     font: inherit;
@@ -94,7 +87,6 @@ body{
 .strelka{
     height: 10px;
     width: 10px;
-    /*background-color: rgb(255,255,255);*/
 }
 .search_photo{
     height: 20px;
@@ -168,9 +160,8 @@ body{
 }
 .card img{
     width: 266px;
-    /*height: ;*/
-    /*margin-bottom: 20px;*/
 }
+
 .card a{
     text-decoration: none;
     color: #0067b8;
@@ -178,4 +169,54 @@ body{
 #aa{
     position: relative;
     top: 8px;
+}
+
+#image{
+    padding:50px;
+}
+
+#dlya-biznesa{
+    font-size: 40px;
+    margin-left:30px;
+    font-weight:600;
+}
+
+.card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 96px;
+    margin-left: 55px;
+}
+
+.card2 img{
+    width: 266px;
+}
+
+.card2 a{
+    text-decoration: none;
+    color: #0067b8;
+}
+
+#nazad-vverh{
+    float:right;
+    padding: 30px;
+    text-decoration:none;
+    color:black;
+    background: rgb(225, 225, 225);
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.footer{
+    background-color: rgb(225, 225, 225);
+  
+
+}
+td{
+    padding: 10px;
+}
+th{
+    padding: 10px;
+    font-weight: 600;
 }
