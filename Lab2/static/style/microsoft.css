@@ -222,3 +222,8 @@ th{
     padding: 10px;
     font-weight: 600;
 }
+
+table td a{
+    text-decoration: none;
+    color: black;
+}
