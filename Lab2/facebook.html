@@ -1,33 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login Page | CodingNepal</title>
-    <link rel="stylesheet" href="static/style/facebook.css">
-  </head>
-  <body>
-    <div class="container flex">
-      <div class="facebook-page flex">
-        <div class="text">
-          <h1>facebook</h1>
-          <p>Connect with friends and the world </p>
-          <p> around you on Facebook.</p>
+    <title>Facebook</title>
+    <link rel = "stylesheet" href = "static/style/facebook.css" type="text/css">
+</head>
+<body>
+<div class = "glavnaya">
+    <img class = "logo" src = "static/images/facebook.png">
+    <p class = "info">
+        Connect with friends and the world<br>around you on Facebook.
+    </p>
+</div>
+<div class = "login">
+    <form>
+        <p>
+            <label for = ""></label>
+            <input id = "but" class = "buttons" type="text" placeholder="Email or phone number">
+        </p>
+        <p>
+            <label for = ""></label>
+            <input class = "buttons" type="password" placeholder="Password">
+        </p>
+    </form>
+    <button class = "vhod" type="button">Log in</button>
+    <a class = "zabyl" href = "https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgot password?</br></a>
+    <hr>
+    <button class = "registration" type="button">Create new account</button>
+</div>
+<div class = "znamenitost">
+    <a href="/pages/create/?ref_type=registration_form" class = "sozdat">Create a Page</a> for a celebrity, brand or business.
+</div>
+<footer>
+    <div class="content">
+        <div class="content__languages">
+            <a href="#" class="content__languages_link">Русский</a>
+            <a href="#" class="content__languages_link">English (US)</a>
+            <a href="#" class="content__languages_link">Türkçe</a>
+            <a href="#" class="content__languages_link">Bahasa Indonesia</a>
+            <a href="#" class="content__languages_link">中文(简体)</a>
+            <a href="#" class="content__languages_link">Қазақша</a>
+            <a href="#" class="content__languages_link">Deutsch</a>
+            <a href="#" class="content__languages_link">한국어</a>
+            <a href="#" class="content__languages_link">Shqip</a>
+            <a href="#" class="content__languages_link">Español</a>
+            <a href="#" class="content__languages_link">Português (Brasil)</a
+            >
         </div>
-        <form action="#">
-          <input type="email" placeholder="Email or phone number" required>
-          <input type="password" placeholder="Password" required>
-          <div class="link">
-            <button type="submit" class="login">Login</button>
-            <a href="#" class="forgot">Forgot password?</a>
-          </div>
-          <hr>
-          <div class="button">
-            <a href="#">Create new account</a>
-          </div>
-        </form>
-       
-      </div>
+        <div class="content__desc">
+            <a href="https://ru-ru.facebook.com/reg/" class="content__desc_link">Sign up</a>
+            <a href="https://ru-ru.facebook.com/login/" class="content__desc_link">Log in</a>
+            <a href="https://www.messenger.com/" class="content__desc_link">Messenger</a>
+            <a href="https://ru-ru.facebook.com/lite/" class="content__desc_link">Facebook Lite</a>
+            <a href="https://ru-ru.facebook.com/watch/" class="content__desc_link">Video</a>
+            <a href="https://www.facebook.com/places/" class="content__desc_link">Places</a>
+            <a href="https://www.facebook.com/games/" class="content__desc_link">Games</a>
+            <a href="https://www.facebook.com/login/?next=%2Fmarketplace%2F" class="content__desc_link">Marketplace</a>
+            <a href="https://pay.facebook.com/" class="content__desc_link">Meta Pay</a>
+            <a href="https://www.meta.com/quest/?utm_source=www.facebook.com&utm_medium=oculusredirect" class="content__desc_link">Meta Store</a>
+            <a href="https://www.meta.com/portal/?utm_source=www.facebook.com&utm_medium=portalredirect" class="content__desc_link">Meta Quest</a>
+            <a href="https://www.instagram.com/" class="content__desc_link">Imagine with meta AI</a>
+            <a href="https://www.bulletin.com/" class="content__desc_link">Instagram</a>
+            <a href="https://www.facebook.com/fundraisers/" class="content__desc_link">Fundraisers</a>
+            <a href="https://ru-ru.facebook.com/biz/directory/" class="content__desc_link">Services</a>
+            <a href="https://ru-ru.facebook.com/votinginformationcenter/" class="content__desc_link">Voting Information Center</a>
+            <a href="https://ru-ru.facebook.com/privacy/policy/?entry_point=facebook_page_footer" class="content__desc_link">Privacy policy</a>
+            <a href="https://ru-ru.facebook.com/privacy/center/?entry_point=facebook_page_footer" class="content__desc_link">Privacy Center</a>
+            <a href="https://ru-ru.facebook.com/groups/explore/" class="content__desc_link">Groups</a>
+            <a href="https://about.meta.com/" class="content__desc_link">About</a>
+            <a href="https://ru-ru.facebook.com/login/" class="content__desc_link">Create ad</a>
+            <a href="https://www.facebook.com/pages/create/?ref_type=site_footer" class="content__desc_link">Create page</a>
+            <a href="https://developers.facebook.com/?ref=pf" class="content__desc_link">Developers</a>
+            <a href="https://www.metacareers.com/" class="content__desc_link">Careers</a>
+            <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" class="content__desc_link">Cookies</a>
+            <a href="https://www.facebook.com/help/568137493302217" class="content__desc_link">Add choices</a>
+            <a href="https://www.facebook.com/policies_center/" class="content__desc_link">Terms</a>
+            <a href="https://www.facebook.com/help/?ref=pf" class="content__desc_link">Help</a>
+            <a href="https://www.facebook.com/login/help/637205020878504" class="content__desc_link">Contact Uploading & Non-Users</a>
+        </div>
+        <div class="content__copyright">Meta © 2024</div>
     </div>
-  </body>
+</footer>
+</body>
 </html>
