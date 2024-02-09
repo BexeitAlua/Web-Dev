@@ -146,11 +146,7 @@ footer {
     color: #737373;
     text-decoration: none;
 }
-.link_zabylu_parol:hover,
-.content__desc_link:hover,
-.content__languages_link:hover {
-    text-decoration: underline;
-}
+
 .content__copyright {
     margin: 7px 5px;
 }
