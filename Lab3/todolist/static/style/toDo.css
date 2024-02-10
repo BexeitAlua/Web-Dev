@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(116, 205, 190);
+}
+
+#zagolovok{
+    background-color: rgb(233, 195, 221);
+    font-size: 40px;
+}
+
+#todoList {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 3px solid #fff;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: rgb(233, 195, 221);
+    border: none;
+    padding: 5px 10px;
+}
+#add{
+    background-color: rgb(233, 195, 221);
+    border:none;
+    width:50px;
+    height:30px;
+    margin-left: 15px;
+}
+
+#newTask{
+    width:300px;
+    height:25px;
+    margin-left: 20px;
+}
+
+.saiki{
+    position: absolute;
+    width:200px;
+}
+.senku{
+    float:right;
+    width:250px;
+    
+}
