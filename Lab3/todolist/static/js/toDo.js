@@ -1,21 +1,21 @@
 function addTask() {
-    const newItemInput = document.getElementById("newTask");
-    const taskText = newItemInput.value.trim();
+    let newItemInput = document.getElementById("newTask");
+    let taskText = newItemInput.value.trim();
 
     if (taskText !== "") {
-        const taskList = document.getElementById("tasks");
+        let taskList = document.getElementById("tasks");
 
-        const li = document.createElement("li");
-        const checkbox = document.createElement("input");
+        let li = document.createElement("li");
+        let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.addEventListener("change", function () {
             updateTaskStatus(li, checkbox.checked);
         });
 
-        const taskTextSpan = document.createElement("span");
+        let taskTextSpan = document.createElement("span");
         taskTextSpan.textContent = taskText;
 
-        const deleteBtn = document.createElement("button");
+        let deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
         deleteBtn.classList.add("delete-btn");
         deleteBtn.addEventListener("click", function () {
@@ -41,6 +41,6 @@ function updateTaskStatus(taskItem, isChecked) {
 }
 
 function deleteTask(taskItem) {
-    const taskList = document.getElementById("tasks");
+    let taskList = document.getElementById("tasks");
     taskList.removeChild(taskItem);
 }
