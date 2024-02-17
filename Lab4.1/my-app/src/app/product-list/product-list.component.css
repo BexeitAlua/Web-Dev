@@ -1,0 +1,33 @@
+img{
+    width: 210px;
+    height: 150px;
+  }
+  p{
+    margin-right: 60%;
+  }
+  .product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .product-item {
+    width: 48%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .zvezda{
+    /*overflow: hidden;*/
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 380px;
+    top: 10px;
+  }
+  .kaspi{
+    position: relative;
+    top: -15px;
+  }
