@@ -1,0 +1,42 @@
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+img{
+  width: 190px;
+
+}
+p{
+  margin-right: 10%;
+}
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.product-item {
+  width: 48%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: hidden;
+  /*background-image: url(C:\Users\Huawei\OneDrive\Документы\library3.jpg);*/
+  background-color: rgb(238, 203, 167);
+}
+.zvezda{
+  width: 130px;
+  padding: 10px;
+  position: relative;
+  left: 440px;
+  top: 10px;
+}
+
+.remove{
+  position: relative;
+  left: 250px;
+  top: -130px;
+}
+.like{
+  position: relative;
+  top: 15px;
+}
