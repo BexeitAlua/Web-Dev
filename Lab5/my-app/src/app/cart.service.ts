@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class CartService {
+export class  CartService {
   items: Product[] = [];
   constructor(private http: HttpClient) {}
   addToCart(product: Product) {

@@ -23,7 +23,7 @@ router-outlet + *  {
   padding: 0 16px;
 }
 
-/* Text */
+/* Text   */
 
 h1 {
   font-size: 32px;
