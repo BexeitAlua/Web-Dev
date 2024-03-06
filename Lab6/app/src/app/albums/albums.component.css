@@ -1,0 +1,35 @@
+.albums {
+    max-width: 800px;
+    margin-top: 70px;
+    margin-left: 335px;
+
+}
+
+.content {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #6a676774;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.album-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+
+
+.remove-btn {
+    background-color: #f886c1;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

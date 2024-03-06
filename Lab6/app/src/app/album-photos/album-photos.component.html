@@ -1,0 +1,10 @@
+<div class="album-photos">
+    <div *ngFor="let photo of photos" class="photo-item">
+        <div class="photo-info">
+            <h3> {{ photo.title }}</h3>
+            <p>album ID: {{ photo.albumId }}</p>
+            <p>photo ID: {{ photo.id }}</p>
+        </div>
+        <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}">
+    </div>
+</div>
