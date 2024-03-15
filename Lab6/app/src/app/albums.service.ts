@@ -21,4 +21,8 @@ export class AlbumsService {
   getPhotos(id : number) : Observable<Photo[]>{
     return this.client.get<Photo[]>(`https://jsonplaceholder.typicode.com/albums/${id}/photos`)
   }
+  addAlbum(album: Album): Observable<any> {
+    return this.client.post("https://jsonplaceholder.typicode.com/albums", album);
+  }
+  
 }
