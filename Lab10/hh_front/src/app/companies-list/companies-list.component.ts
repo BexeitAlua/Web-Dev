@@ -1,24 +1,31 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Company } from '../models';
+import { Company, Vacancy } from '../models';
 import { CompanyService } from '../company.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { VacancyComponent } from "../vacancy/vacancy.component";
 
 @Component({
-  selector: 'app-companies-list',
-  standalone: true,
-  imports: [CommonModule,HttpClientModule],
-  templateUrl: './companies-list.component.html',
-  styleUrl: './companies-list.component.css'
+    selector: 'app-companies-list',
+    standalone: true,
+    templateUrl: './companies-list.component.html',
+    styleUrl: './companies-list.component.css',
+    imports: [CommonModule, HttpClientModule, VacancyComponent]
 })
 export class CompaniesListComponent implements OnInit{
+
   companies: Company[] = [];
+  vacancies!: Vacancy[];
+  selectedCompanyId: number | null = null; 
+  company!: Company;
 
   constructor(private companyService: CompanyService,private router: Router) { }
 
   ngOnInit(): void {
     this.loadCompanies();
+
+   
   }
 
   loadCompanies(): void {
@@ -26,8 +33,8 @@ export class CompaniesListComponent implements OnInit{
       this.companies = companies;
     });
   }
+ 
   showVacancies(companyId: number): void {
    
-    this.router.navigate(['/vacancies'], { queryParams: { companyId: companyId } });
   }
 }

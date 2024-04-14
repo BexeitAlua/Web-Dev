@@ -1,16 +1,16 @@
-<h2>List of Companies</h2>
+<h2 id="top-bar">List of Companies</h2>
 
 <div *ngIf="companies.length === 0">
   <p>No companies found.</p>
 </div>
 
-<div *ngFor="let company of companies">
+<div *ngFor="let company of companies" class="companies-block">
   <div class="company-card">
-    <h3>{{ company.name }}</h3>
+    <h3 id="company-name">{{ company.name }}</h3>
     <p><strong>Description:</strong> {{ company.description }}</p>
     <p><strong>City:</strong> {{ company.city }}</p>
     <p><strong>Address:</strong> {{ company.address }}</p>
-    <button (click)="showVacancies(company.id)">Show Vacancies</button>
+    <button  routerLink="['/companies', company.id]">Show Vacancies</button>
   </div>
 </div>
 
