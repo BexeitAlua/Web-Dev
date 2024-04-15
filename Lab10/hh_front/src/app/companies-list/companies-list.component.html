@@ -10,7 +10,8 @@
     <p><strong>Description:</strong> {{ company.description }}</p>
     <p><strong>City:</strong> {{ company.city }}</p>
     <p><strong>Address:</strong> {{ company.address }}</p>
-    <button  routerLink="['/companies', company.id]">Show Vacancies</button>
+    <!-- <button  routerLink="['/vacancies', vacancy.id]">Show Vacancies</button> -->
+    <button (click)="navigateToCompany(company.id)">Show Vacancies</button>
   </div>
 </div>
 

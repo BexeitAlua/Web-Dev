@@ -1,0 +1,22 @@
+.block-vacancy{
+    font-size: 15px;
+    text-align: center;
+}
+#company-name{
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+
+}
+.vacancies-company{
+    background-color: rgb(145, 144, 144);
+
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.list-of-vacancies{
+    font-size: 20px;
+}

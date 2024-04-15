@@ -16,15 +16,16 @@ import { VacancyComponent } from "../vacancy/vacancy.component";
 export class CompaniesListComponent implements OnInit{
 
   companies: Company[] = [];
-  vacancies!: Vacancy[];
+  vacancies: Vacancy[] = [];
   selectedCompanyId: number | null = null; 
   company!: Company;
 
-  constructor(private companyService: CompanyService,private router: Router) { }
+  constructor(private companyService: CompanyService,private router: Router,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.loadCompanies();
-
+  
+  
    
   }
 
@@ -33,8 +34,9 @@ export class CompaniesListComponent implements OnInit{
       this.companies = companies;
     });
   }
- 
-  showVacancies(companyId: number): void {
-   
+  
+  navigateToCompany(companyId: number): void {
+    this.router.navigate(['/companies', companyId]);
   }
+ 
 }
